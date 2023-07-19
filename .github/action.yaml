@@ -1,0 +1,14 @@
+name: Test Stuff
+
+on:
+  workflow_dispatch:
+
+jobs:
+  docker-build:
+    if: ${{ success() }}
+    needs: unit-test
+    runs-on: ubuntu-latest
+    steps:
+      - name: docker build and push
+        uses: gat786/composite-actions/read-files@main
+        
