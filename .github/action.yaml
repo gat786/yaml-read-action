@@ -5,8 +5,6 @@ on:
 
 jobs:
   docker-build:
-    if: ${{ success() }}
-    needs: unit-test
     runs-on: ubuntu-latest
     steps:
       - name: docker build and push
