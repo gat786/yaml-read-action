@@ -1,0 +1,10 @@
+secrets:
+  read_access:
+  - secret_1
+  - secret_2
+  - secret_3
+
+  write_access:
+  - write_secret_1
+  - write_secret_2
+  
