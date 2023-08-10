@@ -9,4 +9,7 @@ jobs:
     steps:
       - name: docker build and push
         uses: gat786/composite-actions/read-files@main
+        with:
+          required_variable: "BARBIE"
+          optional_variable: "KEN"
         
