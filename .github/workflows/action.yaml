@@ -2,6 +2,9 @@ name: Test Stuff
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - main
 
 jobs:
   docker-build:
@@ -11,5 +14,5 @@ jobs:
         uses: gat786/composite-actions/read-files@main
         with:
           required_variable: "BARBIE"
-          optional_variable: "KEN"
+          # optional_variable: "KEN"
         
